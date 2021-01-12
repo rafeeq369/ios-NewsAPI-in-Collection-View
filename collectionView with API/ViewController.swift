@@ -112,12 +112,13 @@ extension ViewController :  UICollectionViewDelegate, UICollectionViewDataSource
         let value = finalArray[indexPath.row]
         let string = value.urlToImage ?? ""
         if let image = getImage(from: string) {
-
+            cell.cellImage.layer.cornerRadius = 12
             cell.cellImage!.image = image
+           
         }
 
-       cell.cellTitle?.text = value.author
-        cell.cellContent?.text = value.author
+//    cell.cellTitle?.text = value.author
+//    cell.cellContent?.text = value.author
         return cell
     }
     
@@ -128,6 +129,7 @@ extension ViewController :  UICollectionViewDelegate, UICollectionViewDataSource
         let destination = storyboard.instantiateViewController(withIdentifier: "YourViewController") as! AnotherViewController
         destination.details = value
         self.navigationController?.pushViewController(destination, animated: true)
+        
     }
     
 }

@@ -17,6 +17,7 @@
 		5F4CCC7125AC25CE004FC83E /* collectionView_with_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CCC7025AC25CE004FC83E /* collectionView_with_APIUITests.swift */; };
 		5F4CCC9725AC2CE1004FC83E /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CCC9625AC2CE1004FC83E /* CollectionViewCells.swift */; };
 		5F4CCC9C25AC4E32004FC83E /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CCC9B25AC4E32004FC83E /* AnotherViewController.swift */; };
+		5F9FAFE625AD873B00A0FEA6 /* imagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9FAFE525AD873B00A0FEA6 /* imagePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5F4CCC7225AC25CE004FC83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F4CCC9625AC2CE1004FC83E /* CollectionViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 		5F4CCC9B25AC4E32004FC83E /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		5F9FAFE525AD873B00A0FEA6 /* imagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				5F4CCC5225AC25CA004FC83E /* ViewController.swift */,
 				5F4CCC9625AC2CE1004FC83E /* CollectionViewCells.swift */,
 				5F4CCC5425AC25CA004FC83E /* Main.storyboard */,
+				5F9FAFE525AD873B00A0FEA6 /* imagePreview.swift */,
 				5F4CCC5725AC25CD004FC83E /* Assets.xcassets */,
 				5F4CCC5925AC25CD004FC83E /* LaunchScreen.storyboard */,
 				5F4CCC5C25AC25CD004FC83E /* Info.plist */,
@@ -268,6 +271,7 @@
 				5F4CCC9C25AC4E32004FC83E /* AnotherViewController.swift in Sources */,
 				5F4CCC4F25AC25CA004FC83E /* AppDelegate.swift in Sources */,
 				5F4CCC9725AC2CE1004FC83E /* CollectionViewCells.swift in Sources */,
+				5F9FAFE625AD873B00A0FEA6 /* imagePreview.swift in Sources */,
 				5F4CCC5125AC25CA004FC83E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

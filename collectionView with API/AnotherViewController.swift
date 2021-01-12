@@ -7,27 +7,47 @@
 
 import UIKit
 
-class AnotherViewController: UIViewController {
+class AnotherViewController: UIViewController, UIScrollViewDelegate {
 
+    
     @IBOutlet weak var foto: UIImageView!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var content: UILabel!
-    var details: Article!
-
+    @IBOutlet weak var previewImg: UIView!
+    @IBOutlet weak var Prviewpic: UIImageView!
+    
+        var details: Article!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         author?.text = details.author
-        content?.text = details.content
-        print("Rafeeq \(details!)")
+//        content?.text = details.content
         // Do any additional setup after loading the view.
         let string = details.urlToImage ?? ""
         if let image = getImage(from: string) {
-
             foto!.image = image
         }
+        
+
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchHappen(_:)))
+        foto.addGestureRecognizer(tap)
+        foto.isUserInteractionEnabled = true
+
     }
     
-  
+    @objc func touchHappen(_ sender: UITapGestureRecognizer) {
+        print("Hello Dear you are here")
+        let string = details.urlToImage ?? ""
+        if let images = getImage(from: string) {
+            foto!.image = images
+            Prviewpic.image = images
+        }
+        previewImg.isHidden = false
+    }
+    @IBAction func cancelPreview(_ sender: Any) {
+        previewImg.isHidden = true
+    }
     // MARK: - Navigation
 
     func getImage(from string: String) -> UIImage? {
@@ -54,6 +74,8 @@ class AnotherViewController: UIViewController {
 
         return image
     }
-    
 
+    @IBAction func backToCV(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
